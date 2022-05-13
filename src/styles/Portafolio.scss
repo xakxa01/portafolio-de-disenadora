@@ -35,3 +35,9 @@ body {
     }
   }
 }
+
+@media all and (max-width: 768px) {
+  .PortafolioContainer .galleryContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

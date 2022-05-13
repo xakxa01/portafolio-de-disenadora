@@ -22,11 +22,11 @@
       position: absolute;
       bottom: 3vh;
       left: 0;
-      z-index: -1;
     }
 
     .info {
       margin: 10vh 20px;
+      z-index: 2;
 
       .title {
         color: $naranja;
@@ -36,7 +36,8 @@
     .imageGroup {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 10px;
+      gap: 10px;
+      z-index: 2;
 
       .mainImg {
         width: 300px;
@@ -46,6 +47,7 @@
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
+
         &:hover {
           transform: scale(1.1);
           -webkit-transform: scale(1.1);
@@ -54,6 +56,22 @@
           -o-transform: scale(1.1);
         }
       }
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .aboutContainer {
+    flex-direction: column;
+    align-items: center;
+
+    &::before {
+      top: 50vh;
+    }
+
+    .mainImg {
+      width: 50px;
+      height: 50px;
     }
   }
 }

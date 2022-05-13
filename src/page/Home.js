@@ -9,11 +9,9 @@ export default function Home() {
 			<div className="left"></div>
 			<div className="right">
 				<Navbar />
-
 				<div className="logo">
 					<img className="logoImg" src={logo} alt="logo" />
 				</div>
-
 			</div>
 		</header>
 	)
